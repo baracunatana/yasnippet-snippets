@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: beamer-columna
+# key: bea-col
+# --
+* Columna :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: $1
+    :END:
+$0

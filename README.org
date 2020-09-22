@@ -1,4 +1,4 @@
-#+title: Repositorio de snippets personales
+#+title: Repositorio de /snippets/ personales
 
 * Introducción
 Este repositorio contiene una colección de /snippets/ para ser usados con =yasnippet= en Emacs. Se basan enteramente en mis preferencias personales y no están pensados para se usados por el público en general. Sin embargo, pueden servir de base para que otras personas los adapten a su flujo de trabajo y preferencias.

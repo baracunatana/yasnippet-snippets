@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: latex-img
+# key: la-img
+# --
+
+#+name: $1
+#+caption: $2
+$0

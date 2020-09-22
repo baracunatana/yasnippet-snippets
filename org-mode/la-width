@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: la-width
+# key: la-w
+# --
+#+attr_latex: :width $1\linewidth
+$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: la-height
+# key: la-h
+# --
+#+attr_latex: :height $1\textheight
