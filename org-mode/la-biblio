@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: latex-bibliografía
+# key: la-biblio
+# --
+* Bibliografía
+  #+latex: \printbibliography[heading=none]
+$0

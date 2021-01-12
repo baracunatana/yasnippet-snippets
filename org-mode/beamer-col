@@ -2,8 +2,8 @@
 # name: beamer-columna
 # key: bea-col
 # --
-* Columna :BMCOL:
-    :PROPERTIES:
-    :BEAMER_col: $1
-    :END:
-$0
+${1:Columna} :BMCOL:
+:PROPERTIES:
+:BEAMER_col: ${2:.5}
+:beamer_opt: t
+:END:$0

@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: beamer-configuracion
+# key: bea-conf
+# --
+:confLatex:
+#+OPTIONS: H:2 toc:t tasks:nil email:t
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [presentation, aspectratio=169]
+#+LATEX_HEADER: \usepackage{graphicx, tikz}
+#+BEAMER_THEME: Metropolis
+# En español
+#+LANGUAGE: es
+#+LATEX_HEADER: \usepackage[spanish]{babel}
+#+latex_header: \usepackage[citestyle=authoryear,bibstyle=authoryear,backend=biber,natbib=true] {biblatex}
+#+latex_header: \addbibresource{~/biblioteca/main.bib}
+:END:
+$0

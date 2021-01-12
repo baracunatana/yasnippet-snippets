@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: latex-configuracion
+# key: la-conf
+# --
+:confLatex:
+# No incluir tabla de contenidos, incluir email, incluir sub-titulo
+#+options: toc:nil, email:t, subtitle:t
+# Configuración de babel para títulos y etiquetas en español
+#+LANGUAGE: es
+#+LATEX_HEADER: \usepackage[spanish]{babel}
+# No resaltar enlaces en documento final
+#+latex_class_options: [hidelinks]
+# Agrandar espacio de texto
+#+latex_header: \usepackage[margin=3cm]{geometry}
+# Configuración de biblatex
+#+latex_header: \usepackage[citestyle=authoryear,bibstyle=authoryear,backend=biber,natbib=true] {biblatex}
+#+latex_header: \addbibresource{~/biblioteca/main.bib}
+:END:
+$0
