@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: latex-doc-puj
+# key: la-puj
+# --
+#+title: $1
+#+author: ${2:Juan E. Gómez-Morantes, PhD}
+
+:confLatex:
+# No incluir tabla de contenidos
+#+options: toc:nil
+# Configuración de babel para títulos y etiquetas en español
+#+LANGUAGE: es
+#+LATEX_HEADER: \usepackage[spanish]{babel}
+# No resaltar enlaces en documento final, xcolor para tablas
+#+latex_class_options: [hidelinks, table]
+# Configuración de biblatex
+#+latex_header: \usepackage[citestyle=authoryear,bibstyle=authoryear,backend=biber,natbib=true] {biblatex}
+#+latex_header: \addbibresource{~/biblioteca/main.bib}
+# Paquete de documento PUJ
+#+latex_header: \usepackage{docsimplepuj}
+#+latex_header: \subtitle{$3}
+#+latex_header: \subsubtitle{$4}
+:END:
+$0
