@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: Reporte de calificación
+# key: la-cal
+# --
+#+title: ${1:Trabajo - Grupo} 
+#+subtitle: Reporte de calificación 
+#+author: Juan E. Gómez-Morantes, PhD.
+
+:ox-latex-config:
+# Table para que xcolor lo tome y puede colorear filas de tablas
+#+LATEX_CLASS_OPTIONS: [table, hidelinks]
+#+LATEX_HEADER: \usepackage{xcolor}
+#+latex_header: \usepackage[margin=2cm]{geometry}
+#+latex_header: \usepackage{multicol}
+#+options: toc:nil subtitle:t title:t
+#+LANGUAGE: es
+#+latex_header: \usepackage[spanish]{babel}
+:END:
+
+#+latex: \rowcolors{2}{white}{black!15}
+#+attr_latex: :environment longtable :align p{25ex}|c|p{50ex}|c :booktabs t
+|            |      | <30>          |              |
+|------------+------+---------------+--------------|
+| *Elemento* |  *%* | *Comentarios* | *Puntos/100* |
+|------------+------+---------------+--------------|
+| $0           | 100% |               |            0 |
+|------------+------+---------------+--------------|
+| *Total*    | 100% |               |            0 |
+|------------+------+---------------+--------------|
+#+TBLFM: @>\$2=100*vsum(@II..@III);%.0f%%::@>\$>=inner(mul,add,@II\$2..@III\$2,@II\$4..@III\$4)/20
