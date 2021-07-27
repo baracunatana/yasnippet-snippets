@@ -8,6 +8,8 @@
 :confLatex:
 # No incluir tabla de contenidos
 #+options: toc:nil
+# Usar booktabs
+#+LATEX_HEADER: \usepackage{booktabs}
 # Configuración de babel para títulos y etiquetas en español
 #+LANGUAGE: es
 #+LATEX_HEADER: \usepackage[spanish]{babel}
