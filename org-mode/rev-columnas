@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: rev-columnas
+# key: rev-columnas
+# --
+#+reveal_html: <div class="column" style="float:left; width:${1:50}%">
+$2
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width:${3:50}%">
+$0
+#+reveal_html: </div>
