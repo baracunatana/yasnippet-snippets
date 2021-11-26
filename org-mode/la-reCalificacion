@@ -18,6 +18,7 @@
 #+latex_header: \usepackage[spanish]{babel}
 :END:
 
+#+name: nota
 #+latex: \rowcolors{2}{white}{black!15}
 #+attr_latex: :environment longtable :align p{25ex}cp{50ex}c :booktabs t
 |            |      | <30>          |              |
