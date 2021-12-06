@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: re-reveal-presentación
+# key: re-reveal-presentación
+# --
+#+title: $1
+#+author: Juan Erasmo Gómez-Morantes, PhD
+
+# Configuración básica
+#+reveal_root: https://cdn.jsdelivr.net/gh/hakimel/reveal.js@4.1.2/
+#+reveal_version: 4
+#+reveal_hlevel: 2
+#+language: es
+#+reveal_theme: solarized
+#+options: toc:nil num:nil reveal_width:1600 reveal_height:900 reveal_margin:0.1 reveal_minScale:0.2 reveal_maxScale:2.5 reveal_transition:'cube' reveal_history:true date:nil
+
